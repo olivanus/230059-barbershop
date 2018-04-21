@@ -21,6 +21,8 @@
         </ul>
       </nav>
     </header>
+
+
     <main class="container">
         <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
         <ul class="breadcrumbs">
@@ -30,6 +32,7 @@
           <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»
           </li>
         </ul>
+
         <section class="product-photos">
           <h2 class="visually-hidden">Изображения товара</h2>
           <p class="product-photo-full">
@@ -41,6 +44,7 @@
             <li><img src="img/product-small-3.jpg" width="140" height="149" alt="Фото отдельной части"></li>
           </ul>
         </section>
+
         <section class="product-info">
           <h2 class="visually-hidden">Описание товара</h2>
           <p class="product-availability">Есть в наличии</p>
@@ -60,6 +64,8 @@
           </ul>
         </section>
       </main>
+
+
       <footer class="main-footer">
         <p class="footer-contacts">
           Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д.19/8<br>
@@ -78,11 +84,41 @@
           <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
         </p>
       </footer>
+
+
       <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль.</p>
-        <!--Здесь будет форма-->
-        <span class="modal-close">x</span>
+        <!--Попап  Личный кабинет-->
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="user-login">Логин</label>
+            <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-password">Пароль</label>
+            <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p class="login-password-info">
+            <label>
+              <input type="checkbox" name="remember" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Запомните меня
+            </label>
+            <a class="restore" href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+      <!--Попап Карта-->
+
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
 
 
